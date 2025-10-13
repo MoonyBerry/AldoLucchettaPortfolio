@@ -31,5 +31,52 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!--NAVBAR-->
+    <header class="header">
+      <nav class="navbar" aria-label="main navigation">
+        <ul class="navbar__list">
+          <li><a class="navbar__link" href="#home">Home</a></li>
+          <li><a class="navbar__link" href="#about">About</a></li>
+          <li><a class="navbar__link" href="#skills">Skills</a></li>
+          <li><a class="navbar__link" href="#projects">Projects</a></li>
+          <li><a class="navbar__link" href="#contacts">Contacts</a></li>
+        </ul>
+
+        <!--BUTTON TO OPEN MOBILE NAVBAR-->
+        <button class="navbar__toggle" aria-label="open mobile menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div class="navbar-mobile__overlay">
+        <nav class="navbar-mobile" aria-label="mobile navigation">
+          <!--BUTTON TO CLOSE MOBILE NAVBAR-->
+          <button class="navbar-mobile__toggle" aria-label="open mobile menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="navbar-mobile__list">
+            <li><a class="navbar-mobile__link" href="#home">Home</a></li>
+            <li><a class="navbar-mobile__link" href="#about">About</a></li>
+            <li>
+              <a class="navbar-mobile__link" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a class="navbar-mobile__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--HOME HERO-->
+    <div class="hero" id="home">
+      <h1 class="hero__title">Aldo Lucchetta</h1>
+      <h2 class="hero__subtitle">Game Designer</h2>
+      <button class="hero__button--projects">
+        <a class="hero__button--link" href="#projects">Discover my progects</a>
+      </button>
+    </div>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>
