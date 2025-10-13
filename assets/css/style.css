@@ -137,7 +137,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.2); /* <-- regola qui l’opacità */
+  background-color: rgba(255, 255, 255, 0.2);
   z-index: 1;
 }
 
@@ -159,6 +159,7 @@
   animation: typing 3s steps(20, end) forwards, blink 0.7s infinite;
 }
 
+/* TITLE TYPING ANIMATION */
 @keyframes typing {
   from {
     width: 0;
@@ -174,8 +175,6 @@
     border-color: transparent;
   }
 }
-
-/* TITLE TYPING ANIMATION */
 
 .hero__subtitle {
   font-family: var(--secondary-font);
@@ -255,6 +254,24 @@
 
   .navbar-mobile.show {
     transform: translateX(0%);
+  }
+
+  /* HOME HERO */
+  .hero__title {
+    font-family: var(--primary-font);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    border-right: none;
+    white-space: wrap;
+    overflow: hidden;
+    width: 100%;
+    animation: none;
+  }
+
+  .hero__subtitle {
+    font-size: 1.5rem;
   }
 }
 
