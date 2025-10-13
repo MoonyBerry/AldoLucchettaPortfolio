@@ -31,7 +31,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   position: relative;
-  color: var(--green);
+  color: var(--blue);
 }
 
 .navbar__link::after {
@@ -41,7 +41,7 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: var(--green);
+  background-color: var(--blue);
   transition: all 0.3s ease-in-out;
   transform: translateX(-50%);
 }
@@ -92,7 +92,7 @@
 .navbar-mobile__link {
   text-decoration: none;
   font-size: 1.5rem;
-  color: var(--green);
+  color: var(--blue);
 }
 
 .navbar-mobile__toggle {
@@ -100,7 +100,7 @@
   border: none;
   font-size: 2rem;
   padding: 10px;
-  color: var(--green);
+  color: var(--blue);
 }
 
 .navbar-mobile__overlay {
@@ -120,8 +120,8 @@
   height: 100vh;
   background-image: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0) 60%,
-      var(--green) 100%
+      rgba(255, 255, 255, 0) 75%,
+      var(--blue) 100%
     ),
     url("../img/hero-bg.png");
   background-position: top;
@@ -201,8 +201,8 @@
   text-decoration: none;
   font-size: 0.85rem;
   font-family: var(--secondary-font);
-  font-weight: 500;
-  color: var(--green);
+  font-weight: 600;
+  color: var(--blue);
 }
 
 /* MEDIA QUERY */
@@ -243,7 +243,7 @@
     border: none;
     font-size: 1.5rem;
     z-index: 1;
-    color: var(--brown);
+    color: var(--blue);
   }
 
   .navbar-mobile.show,
