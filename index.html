@@ -28,6 +28,11 @@
       rel="stylesheet"
     />
     <!--CSS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      media="(min-width: 550px)"
+    />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -49,6 +54,7 @@
         </button>
       </nav>
 
+      <!--MOBILE NAVBAR-->
       <div class="navbar-mobile__overlay">
         <nav class="navbar-mobile" aria-label="mobile navigation">
           <!--BUTTON TO CLOSE MOBILE NAVBAR-->
@@ -83,15 +89,16 @@
     <main class="main">
       <!--ABOUT SECTION-->
       <section id="about">
-        <h2 class="about__title">About</h2>
+        <h2 data-aos="fade-down" class="about__title">About</h2>
         <div class="about__container">
           <img
+            data-aos="fade-right"
             class="about__photo"
             src="assets/img/about-photo.jpeg"
             alt="Aldo Lucchetta personal photo"
             title="Aldo Lucchetta personal photo"
           />
-          <p class="about__description">
+          <p data-aos="fade-left" class="about__description">
             <span class="about__span--bold"> Since I was a child</span>, I've
             always been deeply passionate about technology and video games. My
             biggest dream has always been to turn
@@ -111,9 +118,9 @@
 
       <!--SKILLS SECTION-->
       <section id="skills">
-        <h2 class="skills__title">Skills</h2>
+        <h2 data-aos="fade-down" class="skills__title">Skills</h2>
         <div class="skills__main-container">
-          <div class="skills__container">
+          <div data-aos="fade-down-right" class="skills__container">
             <h3 class="skills__container-title">Technical</h3>
             <ul class="skills__container-list">
               <li>Unreal Engine 5</li>
@@ -123,7 +130,7 @@
               <li>Spreadsheet</li>
             </ul>
           </div>
-          <div class="skills__container">
+          <div data-aos="fade-up-left" class="skills__container">
             <h3 class="skills__container-title">Design</h3>
             <ul class="skills__container-list">
               <li>Mechanics Design</li>
@@ -150,8 +157,8 @@
 
       <!--PROJECTS SECTION-->
       <section id="projects">
-        <h2 class="projects__title">Projects</h2>
-        <div class="carousel">
+        <h2 data-aos="fade-down" class="projects__title">Projects</h2>
+        <div data-aos="zoom-in" class="carousel">
           <div class="projects__container"></div>
           <div class="carousel__btn-container">
             <button class="carousel__btn prev" aria-label="Previous">
@@ -167,7 +174,7 @@
 
     <!--CONTACTS FOOTER-->
     <footer class="footer">
-      <section id="contacts">
+      <section data-aos="fade-up" id="contacts">
         <h2 class="contacts__title">Contacts</h2>
         <div class="contacts__info">
           <a
@@ -203,5 +210,16 @@
       </section>
     </footer>
     <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        easing: "ease-in-out",
+        once: false,
+        offset: 100,
+        disable: "mobile",
+      });
+    </script>
   </body>
 </html>

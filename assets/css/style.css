@@ -1,4 +1,37 @@
 /* CSS */
+/* STYLING SCROLLBAR */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #346d8b;
+  background: linear-gradient(
+    0deg,
+    rgba(52, 109, 139, 1) 0%,
+    rgba(245, 231, 222, 1) 50%,
+    rgba(36, 114, 101, 1) 100%
+  );
+  border-radius: 100px;
+  border: 2px solid var(--cream);
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #346d8b;
+  background: linear-gradient(
+    0deg,
+    rgb(40, 84, 108) 0%,
+    rgb(221, 209, 200) 50%,
+    rgb(33, 105, 92) 100%
+  );
+}
 
 .header {
   width: 100%;
@@ -8,6 +41,17 @@
   padding: 20px 30px;
   position: fixed;
   z-index: 3;
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.3s linear, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+}
+
+.hide {
+  transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .navbar {
@@ -109,13 +153,14 @@
 
 .navbar-mobile__overlay {
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   transition: opacity 0.4s ease-in-out;
+  z-index: 4;
 }
 
 /* HOME HERO */
@@ -326,6 +371,7 @@
 .skills__bubble {
   position: absolute;
   border-radius: 50%;
+  transition: transform 0.3s linear;
 }
 
 .skills__bubble--big-blue,
@@ -344,6 +390,11 @@
   height: 90px;
   top: 60%;
   left: 70%;
+}
+
+.skills__bubble--little-blue:hover,
+.skills__bubble--little-green:hover {
+  transform: translatex(-20%);
 }
 
 .skills__bubble--big-green {
@@ -385,7 +436,7 @@
   gap: 30px;
   width: 100%;
   justify-content: center;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 10px 20px;
 }
 
 .projects__container {
@@ -403,10 +454,12 @@
   padding: 0.4rem 0.7rem;
   transition: background-color 0.3s;
   color: var(--green);
+  transition: transform 0.2s ease-in-out;
 }
 
 .carousel__btn:hover {
   background-color: lightgray;
+  transform: scale(1.2);
 }
 
 .project {
@@ -415,6 +468,7 @@
   border-radius: 20px;
   padding: 10px;
   height: 400px;
+  cursor: pointer;
 }
 
 .project__img {
@@ -702,6 +756,7 @@
   .header {
     height: 60px;
     padding: 15px;
+    width: 100%;
   }
 
   /* ABOUT SECTION */
@@ -713,7 +768,7 @@
   }
 
   .about__container {
-    width: 100%;
+    width: 80%;
   }
 
   .about__description {
