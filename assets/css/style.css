@@ -220,7 +220,8 @@
 /* ABOUT SECTION */
 #about,
 #skills,
-#projects {
+#projects,
+#contacts {
   width: 100%;
   height: 80vh;
   background-color: var(--blue);
@@ -233,7 +234,8 @@
 
 .about__title,
 .skills__title,
-.projects__title {
+.projects__title,
+.contacts__title {
   font-family: var(--primary-font);
   color: var(--cream);
   font-size: 2.5rem;
@@ -503,6 +505,48 @@
   font-weight: 600;
 }
 
+/* CONTACTS SECTION */
+.footer {
+  height: 200px;
+  width: 100%;
+  background-color: var(--green);
+  position: relative;
+  overflow: hidden;
+}
+
+#contacts {
+  width: 60%;
+  height: 500px;
+  background-color: var(--cream);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: flex-start;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.contacts__title {
+  color: var(--blue);
+}
+
+.contacts__info {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contacts__social {
+  width: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contacts__social:hover {
+  transform: scale(1.2);
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 1440px) {
   /* NAVBAR */
@@ -635,10 +679,25 @@
   .skills__bubble {
     display: none;
   }
+
+  /* CONTACTS SECTION */
+  #contacts {
+    width: 100%;
+    gap: 0;
+  }
+
+  .contacts__title {
+    margin-top: 20px;
+  }
+
+  .contacts__social {
+    margin-top: 0;
+    width: 40px;
+  }
 }
 
 /* ROTATING SCREEN MOBILE MEDIA QUERY */
-@media screen and (max-height: 680px) {
+@media screen and (max-height: 700px) {
   /* NAVBAR */
   .header {
     height: 60px;
