@@ -4,7 +4,7 @@ const $openNavbar = document.querySelector(".navbar__toggle");
 const $navbarMobile = document.querySelector(".navbar-mobile");
 const $navbarOverlay = document.querySelector(".navbar-mobile__overlay");
 const $closeNavbar = document.querySelector(".navbar-mobile__toggle");
-const $mobileLinks = document.querySelectorAll(".navbar-mobile__links");
+const $mobileLinks = document.querySelectorAll(".navbar-mobile__link");
 const $body = document.querySelector("body");
 
 function openMobileNav() {
