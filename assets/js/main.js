@@ -49,18 +49,25 @@ const $projectsContainer = document.querySelector(".projects__container");
 /* Array containing all games info */
 const projects = [
   {
-    title: "Stardew Valley Prototype",
-    img: "../assets/img/starvalley.jpeg",
-    description:
-      "A gameplay prototype inspired by Stardew Valley, featuring a dynamic inventory and interaction system. Built in Unreal Engine 5 entirely with Blueprints.",
-    tags: ["UE5", "Blueprints", "System Design"],
-  },
-  {
     title: "HorrorTubbies Hotel",
     img: "../assets/img/tubbies-hotel.jpeg",
     description:
       "A short horror game prototype inspired by Outlast, where a distorted Teletubby stalks you through an abandoned hotel. Built in Unreal Engine 5 using Blueprints and custom AI behavior.",
     tags: ["UE5", "Blueprints", "AI", "Level Design"],
+  },
+  {
+    title: "Ratchet & Clank 3 - Teardown",
+    img: "../assets/img/ratchet-teardown.png",
+    description:
+      "A detailed analysis of Ratchet and Clank 3,exploring the systems, mechanics and design choices that make its simple premise exceptionally effective.",
+    tags: ["Google Docs", "Game Design", "Level Design", "Photoshop"],
+  },
+  {
+    title: "Stardew Valley Prototype",
+    img: "../assets/img/starvalley.jpeg",
+    description:
+      "A gameplay prototype inspired by Stardew Valley, featuring a dynamic inventory and interaction system. Built in Unreal Engine 5 entirely with Blueprints.",
+    tags: ["UE5", "Blueprints", "System Design"],
   },
 ];
 
