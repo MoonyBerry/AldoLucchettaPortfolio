@@ -43,17 +43,23 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop;
 });
 
-/* CREATING PROJECTS ELEMENTS */
-const $projectsContainer = document.querySelector(".projects__container");
 
-/* Array containing all games info */
-const projects = [
+
+/* Array containing all experience info */
+const experience = [
   {
-    title: "HorrorTubbies Hotel",
-    img: "../assets/img/tubbies-hotel.jpeg",
+    title: "Louis Vuitton - Integration",
+    img: "../assets/img/louis-vuitton-integration.jpg",
     description:
-      "A short horror game prototype inspired by Outlast, where a distorted Teletubby stalks you through an abandoned hotel. Built in Unreal Engine 5 using Blueprints and custom AI behavior.",
-    tags: ["UE5", "Blueprints", "AI", "Level Design"],
+      "Integration and maintenance of many third-party API for the whole Louis Vuitton ecosystem.",
+    tags: ["Integration", "Mulesoft", "Java", "API", "Gen AI", "MySQL"],
+  },
+  {
+    title: "Tiffany & Co. - Integration",
+    img: "../assets/img/tiffany-co-integration.jpg",
+    description:
+      "Integration of many third-party API for the official e-commerce website.",
+    tags: ["Integration", "Mulesoft", "Java", "API", "MySQL"],
   },
   {
     title: "Ratchet & Clank 3 - Teardown",
@@ -61,15 +67,46 @@ const projects = [
     description:
       "A detailed analysis of Ratchet and Clank 3,exploring the systems, mechanics and design choices that make its simple premise exceptionally effective.",
     tags: ["Google Docs", "Game Design", "Level Design", "Photoshop"],
+  }
+];
+
+
+
+/* CREATING PROJECTS ELEMENTS */
+const $projectsContainer = document.querySelector(".projects__container");
+
+/* Array containing all projects info */
+const projects = [
+  {
+    title: "Python AI RPG",
+    img: "../assets/img/python-ai-rpg.png",
+    description:
+      "A text-based RPG where players interact with an AI to explore a procedually generated story, and engage in turn-based combat. Built using Python and Ollama",
+    tags: ["Python", "Ollama", "Text-Based", "RPG"],
   },
   {
-    title: "Stardew Valley Prototype",
-    img: "../assets/img/starvalley.jpeg",
+    title: "HorrorTubbies Hotel",
+    img: "../assets/img/tubbies-hotel.jpeg",
     description:
-      "A gameplay prototype inspired by Stardew Valley, featuring a dynamic inventory and interaction system. Built in Unreal Engine 5 entirely with Blueprints.",
-    tags: ["UE5", "Blueprints", "System Design"],
+      "A short horror game prototype inspired by Outlast, where a distorted Teletubby stalks you through an abandoned hotel. Built in Unreal Engine 5 using Blueprints and custom AI behavior.",
+    tags: ["UE5", "Blueprints", "AI"],
   },
+  {
+    title: "airbnb Clone",
+    img: "../assets/img/airbnb-clone.png",
+    description:
+      "A full-stack web application that mimics the core functionalities of Airbnb, allowing users to browse listings.",
+    tags: ["Full-Stack", "JavaScript", "PHP", "MySQL"],
+  },
+  {
+    title: "Ratchet & Clank 3 - Teardown",
+    img: "../assets/img/ratchet-teardown.png",
+    description:
+      "A detailed analysis of Ratchet and Clank 3,exploring the systems, mechanics and design choices that make its simple premise exceptionally effective.",
+    tags: ["Google Docs", "Game Design", "Level Design", "Photoshop"],
+  }
 ];
+
 
 /* Function to get tags */
 function getTags(tags) {
