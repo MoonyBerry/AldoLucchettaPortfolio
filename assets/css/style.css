@@ -533,7 +533,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
   border-radius: 15px;
   padding: 30px;
@@ -762,6 +762,11 @@
   /* FEATURED SECTION */
   .featured__pdf {
     display: none;
+  }
+
+  .featured__photo {
+    
+    max-width: 300px;
   }
 
   /* ABOUT SECTION */
