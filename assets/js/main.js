@@ -45,33 +45,6 @@ window.addEventListener("scroll", () => {
 
 
 
-/* Array containing all experience info */
-const experience = [
-  {
-    title: "Louis Vuitton - Integration",
-    img: "../assets/img/louis-vuitton-integration.jpg",
-    description:
-      "Integration and maintenance of many third-party API for the whole Louis Vuitton ecosystem.",
-    tags: ["Integration", "Mulesoft", "Java", "API", "Gen AI", "MySQL"],
-  },
-  {
-    title: "Tiffany & Co. - Integration",
-    img: "../assets/img/tiffany-co-integration.jpg",
-    description:
-      "Integration of many third-party API for the official e-commerce website.",
-    tags: ["Integration", "Mulesoft", "Java", "API", "MySQL"],
-  },
-  {
-    title: "Ratchet & Clank 3 - Teardown",
-    img: "../assets/img/ratchet-teardown.png",
-    description:
-      "A detailed analysis of Ratchet and Clank 3,exploring the systems, mechanics and design choices that make its simple premise exceptionally effective.",
-    tags: ["Google Docs", "Game Design", "Level Design", "Photoshop"],
-  }
-];
-
-
-
 /* CREATING PROJECTS ELEMENTS */
 const $projectsContainer = document.querySelector(".projects__container");
 
